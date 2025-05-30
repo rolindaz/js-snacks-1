@@ -4,7 +4,7 @@
 let totalNumbers = [];
 
 for (i = 0; i <= 10; i++) {
-    totalNumbers[i] = prompt('Pick a number');
+    totalNumbers[i] = Number(prompt('Pick a number'));
     let userNumber = totalNumbers[i];
     totalNumbers = userNumber + totalNumbers[i];
 };

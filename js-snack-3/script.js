@@ -1,15 +1,12 @@
-// L'utente inserisce due parole in successione, con due prompt. Il software stampa prima la parola più corta, poi la parola più lunga.
+// Il software deve chiedere per 10 volte all'utente di inserire un numero. Il programma stampa la somma di tutti i numeri inseriti.
 
-// L'utente inserisce due parole in successione, con due prompt.
 
-const userWord1 = (prompt('Pick one word')), userWord2 = (prompt('Pick another word'));
+let totalNumbers = [];
 
-// Il software stampa prima la parola più corta, poi la parola più lunga.
-
-if (userWord1.length > userWord2.length) {
-    console.log(userWord2);
-} else if (userWord2.length > userWord1.length) {
-    console.log(userWord1);
-} else {
-    console.log(alert('Your words have the same number of characters!'));
+for (i = 0; i <= 10; i++) {
+    totalNumbers[i] = prompt('Pick a number');
+    let userNumber = totalNumbers[i];
+    totalNumbers = userNumber + totalNumbers[i];
 };
+
+console.log(totalNumbers);

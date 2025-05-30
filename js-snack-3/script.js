@@ -13,7 +13,9 @@ console.log(totalNumbers); */
 
 let sum = null;
 
-for (i = 0; i <= 10; i++) {
+for (i = 0; i < 10; i++) {
     userNumber = Number(prompt('Pick a number'));
-    
+    sum = userNumber + sum;
 }
+
+console.log(sum);

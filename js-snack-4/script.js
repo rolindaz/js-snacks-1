@@ -1,15 +1,17 @@
-// L'utente inserisce due parole in successione, con due prompt. Il software stampa prima la parola più corta, poi la parola più lunga.
+// Crea un array vuoto. Chiedi per 6 volte all'utente di inserire un numero, se è dispari inseriscilo nell'array.
 
-// L'utente inserisce due parole in successione, con due prompt.
+// Crea un array vuoto
 
-const userWord1 = (prompt('Pick one word')), userWord2 = (prompt('Pick another word'));
+const numbers = [];
 
-// Il software stampa prima la parola più corta, poi la parola più lunga.
+// Chiedi per 6 volte all'utente di inserire un numero
 
-if (userWord1.length > userWord2.length) {
-    console.log(userWord2);
-} else if (userWord2.length > userWord1.length) {
-    console.log(userWord1);
-} else {
-    console.log(alert('Your words have the same number of characters!'));
+for (i = 0; i < 6; i++) {
+    userNumber = Number(prompt('Pick a number'));
+    // se è dispari inseriscilo nell'array
+    if (userNumber % 2 !== 0) {
+        numbers.push(userNumber);
+    }
 };
+
+console.log(numbers);
